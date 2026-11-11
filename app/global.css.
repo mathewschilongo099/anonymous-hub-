@@ -1,0 +1,147 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --background: #080e18;
+  --surface: #101a29;
+  --surface-light: #182538;
+  --teal: #20c9b0;
+  --text: #f4f7fb;
+  --muted: #a5b1c2;
+  --border: #26364b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Inter, Arial, sans-serif;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(100% - 32px, 1050px);
+  margin: auto;
+}
+
+.navbar {
+  height: 76px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--teal);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.hero {
+  padding: 55px 0 35px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 7vw, 54px);
+  margin: 0 0 15px;
+}
+
+.hero p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.highlight {
+  color: var(--teal);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+.btn {
+  min-height: 46px;
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 20px;
+  background: var(--teal);
+  color: #061712;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  background: var(--surface-light);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+input, textarea {
+  width: 100%;
+  background: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 13px;
+  margin: 8px 0 15px;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+label {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.status {
+  display: inline-block;
+  color: var(--teal);
+  background: #12332f;
+  border-radius: 30px;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+footer {
+  padding: 35px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 35px;
+  }
+
+  .card {
+    padding: 17px;
+  }
+}
