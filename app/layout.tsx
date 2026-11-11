@@ -4,8 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Anonymous Hub",
-  description:
-    "A community where your voice matters, not your identity."
+  description: "A community where your voice matters, not your identity."
 };
 
 export default function RootLayout({
